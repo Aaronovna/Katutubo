@@ -2,7 +2,7 @@
 
 <h1> [SCHOOL PROJECT] </h1>
 
-<p align="center>
+<p align="center">
     <img width="500" src="logo.png">
 </p>
 
