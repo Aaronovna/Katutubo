@@ -1,6 +1,8 @@
 # katutubo
 
-<h1> [SCHOOL PROJECT] </h1>
+<p align="center" style="color: powderblue; font-weight: bold; font-size: 32px">
+    [SCHOOL PROJECT] katutubo
+</p>
 
 <p align="center">
     <img width="500" src="logo.png">
