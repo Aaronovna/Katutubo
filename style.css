@@ -1,0 +1,349 @@
+*{
+    font-family: CaviarDreams;
+    margin: 0px;
+    padding: 0px;
+    color: #210a02;
+    font-size: 30px;
+    scroll-behavior: smooth;
+    z-index: 1;
+
+}
+
+.textShadow{
+    text-shadow: 1px 1px 2px#210a02;
+}
+
+.itemShadow{
+    filter: drop-shadow(0 0 20px rgb(0, 0, 0));
+}
+
+hr{
+    border-color: #a18e4a;
+    align-self: center;
+    width: 90%;
+}
+
+@font-face {
+    font-family: CaviarDreams;
+    src: url('assets/fonts/CaviarDreams.ttf');
+}
+
+@font-face {
+    font-family: OliveVine;
+    src: url('assets/fonts/OliveVine.otf');
+}
+
+html{   
+    background-image: url('basketweavers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body{
+    backdrop-filter: blur(5px);
+    background-color: rgba(197, 197, 197, 0.418);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    overflow: overlay;
+}
+
+a:link{
+    text-decoration: none;
+}a:visited{
+    text-decoration: none;
+}a:hover{
+    text-decoration: none;
+}a:active{ text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9b351c; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #cf4927; 
+}
+
+/************************************************/
+/************************************************/
+/************************************************/
+
+section.body{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+div.featured{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+div.featured img{
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.mySlides{
+    width: 100%;    
+    display: none;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }  
+
+div.fb a{
+    padding: 10px;
+    color: white;
+    background-color: #7e703b;
+    border-radius: 5px;
+    transition: 0.3s;
+}div.fb a:hover{
+    background-color: #a18e4a;
+    transition: 0.3s;
+}
+
+div.fb{
+    z-index: 2;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    margin-top: 450px;
+}
+
+nav.navBarMain{
+    top: 0;
+    z-index: 5;
+    display: flex;
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #96320eb6;
+    background-image: url(assets/overlay.png);
+    background-size: 50%;
+    backdrop-filter: blur(5px);
+    filter: drop-shadow(0 0 5% rgba(0, 0, 0, 0.5));
+}
+
+nav.navBarMain *{
+    color: #f6bb6d;
+}
+
+nav div.navContentRight{
+    display: flex;
+    flex-basis: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+nav div.navContentRight a{
+    transition: 0.3s;
+}nav div.navContentRight a:hover{
+    color: #9b351c;
+    transition: 0.3s;
+}
+
+.center{
+    text-align: center;
+    align-self: center;
+}
+
+#p1{
+    width: 800px;
+    margin: 50px;
+}
+
+div.footer{
+    background-image: url(assets/overlay.png);
+    background-size: 50%;
+    background-color: #552a0a;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+}
+
+div.footer > div > *{
+    color: #f6bb6d;
+    font-size: 60%;
+}
+div.category{
+    position: relative;
+}
+
+div.product{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+div.product img{
+    position: block;    
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+div.product_overlay{
+    position: absolute;
+    background-color: #00000080;
+    backdrop-filter: blur(5px);
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    opacity: 0;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}div.product_overlay:hover{
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+div.product_overlay p{
+    font-size: 20px;
+    margin: 20px;
+    color: white;
+}
+
+div.product_overlay a{
+    padding: 5px;
+    color: white;
+    background-color: #7e703b;
+    border-radius: 5px;
+    transition: 0.3s;
+}div.product_overlay a:hover{
+    background-color: #a18e4a;
+    transition: 0.3s;
+}
+
+p.cat{
+    display: block;
+    color: #de9956;
+    width: 98%;
+    margin: 30px 0px;
+    background-image: url(assets/itembg.png);
+    background-size: 50%;
+    background-color: #00000093;
+    border-radius: 5px;
+    text-shadow: none;
+}
+
+div.itemcat{
+    align-self: center;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+div.item{  
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 350px;
+    border-radius: 10px;
+    background-image:   url('assets/itembg.png'),
+                        linear-gradient(rgba(255, 255, 255, 0.774), rgba(0, 0, 0, 0.534));
+    background-size: cover;
+    flex-direction: column;
+    margin: 10px;
+}
+
+img.item{
+    margin: 12px 0px;
+    width: 90%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.item_overlay{
+    position: absolute;
+    background-color: #000000ad;
+    backdrop-filter: blur(5px);
+    width: 200px;
+    height: 350px;
+    border-radius: 10px;
+    opacity: 0;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}div.item_overlay:hover{
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+p.item_description{
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+}
+
+div.itemButton{
+    z-index: 3;
+}
+
+div.itemButton button{
+    background-color: #a18e4a;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: 0.3s;
+}div.itemButton button:hover{
+    background-color: #7e703b;
+    transition: 0.3s;
+
+}
+
+#logoTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+p.justify{
+    text-align: justify;
+    text-justify: inter-word;
+}
